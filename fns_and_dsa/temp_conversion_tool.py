@@ -16,4 +16,4 @@ if degree == "C":
 elif degree == "F":
     convert_to_celsius(user_temp)
 else:
-    print("Invalid operation")
+    print("Invalid temperature. Please enter a numeric value")
