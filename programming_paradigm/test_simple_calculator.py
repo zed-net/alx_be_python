@@ -7,7 +7,7 @@ class TestSimpleCalculator(unittest.TestCase)
         self.calc = SimpleCalculator()
 
     # --- Test Methods for Addition ---
-    def test_add_positive_numbers(self):
+    def test_addition(self):
         """Test addition with two positive numbers."""
         self.assertEqual(self.calc.add(2, 3), 5)
         self.assertEqual(self.calc.add(100, 200), 300)
@@ -35,7 +35,7 @@ class TestSimpleCalculator(unittest.TestCase)
         self.assertEqual(self.calc.add(1.1, 2.2), 3.3)
 
     # --- Test Methods for Subtraction ---
-    def test_subtract_positive_numbers(self):
+    def test_subtraction(self):
         """Test subtraction with two positive numbers."""
         self.assertEqual(self.calc.subtract(5, 2), 3)
         self.assertEqual(self.calc.subtract(2, 5), -3)
@@ -57,12 +57,12 @@ class TestSimpleCalculator(unittest.TestCase)
         self.assertEqual(self.calc.subtract(0, 0), 0)
 
     def test_subtract_float_numbers(self):
-       
+
         self.assertEqual(self.calc.subtract(5.5, 2.0), 3.5)
         self.assertEqual(self.calc.subtract(10.0, 3.3), 6.7)
 
     # --- Test Methods for Multiplication ---
-    def test_multiply_positive_numbers(self):
+    def test_multiply(self):
         """Test multiplication with two positive numbers."""
         self.assertEqual(self.calc.multiply(2, 3), 6)
         self.assertEqual(self.calc.multiply(10, 5), 50)
@@ -89,7 +89,7 @@ class TestSimpleCalculator(unittest.TestCase)
         self.assertEqual(self.calc.multiply(1.5, 2.0), 3.0)
 
     # --- Test Methods for Division ---
-    def test_divide_positive_numbers(self):
+    def test_divide(self):
         """Test division with two positive numbers."""
         self.assertEqual(self.calc.divide(10, 2), 5.0)
         self.assertEqual(self.calc.divide(7, 2), 3.5)
