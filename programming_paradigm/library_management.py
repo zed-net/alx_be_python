@@ -31,16 +31,3 @@ class Library:
 
 
 
-# Setup a small library
-library = Library()
-library.add_book(Book("Brave New World", "Aldous Huxley"))
-library.add_book(Book("1984", "George Orwell"))
-library.list_available_books()
-
-library.check_out_book("1984")
-print("\nAvailable books after checking out '1984':")
-library.list_available_books()
-
-library.return_book("1984")
-print("\nAvailable books after returning '1984':")
-library.list_available_books()
